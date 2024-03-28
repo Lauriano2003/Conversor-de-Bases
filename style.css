@@ -1,0 +1,32 @@
+
+.textoPrincipal{
+    text-align: center;
+    font: optional;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+}
+
+.textoInicio{
+text-align: center;
+font-size: large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+#numero_base{
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 121, 235); ;
+}
+.select_bases{
+width: 130px;
+height: 40px;
+border-radius: 50px;
+text-align: center;
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(0, 121, 235);
+}

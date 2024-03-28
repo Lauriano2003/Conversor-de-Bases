@@ -4,25 +4,29 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body >
     
     <center>
-        <h1>Marise's Machine</h1>
+        <h1 class="textoPrincipal">Marise's Machine</h1>
 
 <br><br>
 
-        <h3>Decimal</h3>
-       <select id="select_bases">
-       <option value="binario">binario</option>
-       <option value="hexadecimal">hexadecimal</option>
-       <option value="octal">octal</option>
-       <option value="decimal">Decimal</option>
+        <h3 class="textoInicio">Numero para Converter</h3>
+        <input type="number" id="numero_base">
+        <br><br>
+        <h3 class="textoInicio">Bases</h3>
+       <select class="select_bases">
+       <option value="binario" id="option">binario</option>
+       <option value="hexadecimal" id="option" >hexadecimal</option>
+       <option value="octal" id="option" >octal</option>
+       <option value="decimal" id="option" >Decimal</option>
 </select>
 <br><br>
 
-        <h3>converter para:</h3>
+<div id="mostrarResultado"></div>
 
 
 <button onclick="converter()">Converter</button>
@@ -67,5 +71,4 @@ function aparecer_hexa() {
 function aparecer_octal() {
     demo2.style.display = 'block'
 }
-document.bgColor = "#00ffff";
 </script></body></html>

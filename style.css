@@ -1,16 +1,35 @@
+body{
+    
+    margin: 0;
+    padding: 0; 
+    background: linear-gradient(to 
+    left,
+    #ccc,
+    #0c1b52 90%)
+}     
+.calculadora{
 
+    background: linear-gradient(to 
+    left,
+    #ccc,
+    #302e2e );
+    width: 800px;
+    height: 600px;
+    margin-top: 0%;
+    border-radius:30px;
+align-items: center;
+}
 .textoPrincipal{
     text-align: center;
     font: optional;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-
+    text-shadow: 1px 1px 2px rgb(226, 0, 0), 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(196, 19, 13);
+    color: antiquewhite;
 }
-
 .textoInicio{
 text-align: center;
 font-size: large;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-
+color: antiquewhite;
 }
 #numero_base{
     width: 130px;
@@ -19,7 +38,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     text-align: center;
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
-    color:rgb(0, 121, 235); ;
+    color:rgb(173, 173, 173); ;
 }
 .select_bases{
 width: 130px;
@@ -30,3 +49,24 @@ font-size: larger;
 font-family: 'Times New Roman', Times, serif;
 color: rgb(0, 121, 235);
 }
+.btn {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .btn:hover {
+    background-color: #121b13; /* Verde mais escuro */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  

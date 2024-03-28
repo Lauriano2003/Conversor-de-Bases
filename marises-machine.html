@@ -38,36 +38,6 @@
 <script>
 
 function converter() {
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marise's Machine</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <center>
-        <h1 class="textoPrincipal">Marise's Machine</h1>
-        <br><br>
-        <h3 class="textoInicio">Número para Converter</h3>
-        <input type="text" id="numero_base">
-        <br><br>
-        <h3 class="textoInicio">Bases</h3>
-        <select class="select_bases">
-            <option value="binario">Binário</option>
-            <option value="hexadecimal">Hexadecimal</option>
-            <option value="octal">Octal</option>
-            <option value="decimal">Decimal</option>
-        </select>
-        <br><br>
-        <div id="mostrarResultado"></div>
-        <button onclick="converter()">Converter</button>
-    </center>
-
-    <script>
-        function converter() {
             var valor_informado = document.getElementById("numero_base").value;
             var base_selecionada = document.querySelector('.select_bases').value;
 

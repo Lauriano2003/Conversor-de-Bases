@@ -39,36 +39,56 @@
 
 function converter() {
     
-    var decimal = Number (demo1.value);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marise's Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1 class="textoPrincipal">Marise's Machine</h1>
+        <br><br>
+        <h3 class="textoInicio">Número para Converter</h3>
+        <input type="text" id="numero_base">
+        <br><br>
+        <h3 class="textoInicio">Bases</h3>
+        <select class="select_bases">
+            <option value="binario">Binário</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="octal">Octal</option>
+            <option value="decimal">Decimal</option>
+        </select>
+        <br><br>
+        <div id="mostrarResultado"></div>
+        <button onclick="converter()">Converter</button>
+    </center>
 
-let octal = decimal.toString(8);
+    <script>
+        function converter() {
+            var valor_informado = document.getElementById("numero_base").value;
+            var base_selecionada = document.querySelector('.select_bases').value;
 
-let hexadecimal = decimal.toString(16);
+            let valorDecimal = parseInt(valor_informado, 10);
 
-let binaria = decimal.toString(2);
+            let octal = valorDecimal.toString(8);
+            let hexadecimal = valorDecimal.toString(16);
+            let binaria = valorDecimal.toString(2);
 
-console.log (decimal);
-console.log (octal);
-console.log (hexadecimal);
-console.log (binaria);
+            if (base_selecionada === "binario") {
+                mostrarResultado.innerHTML = `${valorDecimal} <br><br>${octal} <br><br>${hexadecimal}`;
+            } else if (base_selecionada === "hexadecimal") {
+                mostrarResultado.innerHTML = `${valorDecimal}  <br><br>${binaria} <br><br>${octal}`;
+            } else if (base_selecionada === "octal") {
+                mostrarResultado.innerHTML = `${valorDecimal}<br><br>${binaria} <br><br>${hexadecimal}`;
+            } else {
+                mostrarResultado.innerHTML = `${valorDecimal} <br><br>${binaria} <br><br>${octal} <br><br>${hexadecimal}`;
+            }
+        }
+    </script>
+</body>
+</html>
 
-document.getElementById("demo1").innerHTML = ` ${decimal}`;
-document.getElementById("demo2").innerHTML = ` ${octal}`;
-document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
-document.getElementById("demo4").innerHTML = ` ${binaria}`;
-
-
-}
-
-function aparecer_bin() {
-    demo4.style.display = 'block'
-}
-
-function aparecer_hexa() {
-    demo3.style.display = 'block'
-}
-
-function aparecer_octal() {
-    demo2.style.display = 'block'
-}
 </script></body></html>

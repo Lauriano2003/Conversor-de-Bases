@@ -1,72 +1,69 @@
-body{
-    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101720;
     margin: 0;
-    padding: 0; 
-    background: linear-gradient(to 
-    left,
-    #ccc,
-    #0c1b52 90%)
-}     
-.calculadora{
-
-    background: linear-gradient(to 
-    left,
-    #ccc,
-    #302e2e );
-    width: 800px;
-    height: 600px;
-    margin-top: 0%;
-    border-radius:30px;
-align-items: center;
+    padding: 0;
 }
-.textoPrincipal{
+
+h1{
     text-align: center;
     font: optional;
     text-shadow: 1px 1px 2px rgb(226, 0, 0), 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(196, 19, 13);
     color: antiquewhite;
 }
-.textoInicio{
-text-align: center;
-font-size: large;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-color: antiquewhite;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
 }
-#numero_base{
-    width: 130px;
+
+.card {
+    background-color: #1a2b36; /* Cor de fundo dos cards */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h3 {
+    text-align: center;
+    font: optional;
+    text-shadow: 1px 1px 2px rgb(226, 0, 0), 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(196, 19, 13);
+    color: antiquewhite;
+}
+
+.card input[type="text"],
+.card select {
+    width: calc(100% - 20px);
     height: 40px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
-    color:rgb(173, 173, 173); ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    background-color: #263238; /* Cor de fundo dos inputs e selects */
+    color: #eee; /* Cor do texto dos inputs e selects */
 }
-.select_bases{
-width: 130px;
-height: 40px;
-border-radius: 50px;
-text-align: center;
-font-size: larger;
-font-family: 'Times New Roman', Times, serif;
-color: rgb(0, 121, 235);
-}
-.btn {
-    background-color: #4CAF50; /* Verde */
+
+.card .btn {
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .btn:hover {
-    background-color: #121b13; /* Verde mais escuro */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+.card .btn:hover {
+    background-color: green;
+}
+
+.card .resultado {
+    margin-top: 20px;
+    color: #eee; /* Cor do texto do resultado */
+}
